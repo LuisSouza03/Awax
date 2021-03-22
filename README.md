@@ -13,3 +13,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Archive/CSS3)
+- [Credits-for-Design-Page](https://www.behance.net/gallery/58301549/Free-Landing-Page) 
