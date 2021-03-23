@@ -3,7 +3,8 @@
     --color-White: #fff;
     --color-Black: #000;
     --color-Grey: #CCC;
-    --color-Grey2: #333
+    --color-Grey2: #333;
+    --color-Grey-White: #f7f7f7;
 }
 
 *{
@@ -15,7 +16,9 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif ;
     font-size: 13px;
+    overflow-x: hidden;
 }
+
 
 /* ===============
 [MENU] */
@@ -76,6 +79,20 @@ header {
     color: var(--color-Grey);
 }
 
+.button {
+    display: inline-block;
+    background-color: var(--color-Orange);
+    color: var(--color-White);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+
 /* ===============
 [BANNER] */
 
@@ -124,19 +141,6 @@ header {
     margin-top: 15px;
 }
 
-.banner a {
-    display: block;
-    background-color: var(--color-Orange);
-    color: var(--color-White);
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-    transition: all 0.2s ease-in;
-}
 
 .banner a:hover {
     background-color: var(--color-White);
@@ -169,4 +173,85 @@ header {
 
 .banner .pointer.active {
     background-color: var(--color-Orange);
+}
+
+
+/* ===============
+[Section Padrão] */
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 11px;
+    color: var(--color-Grey);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+/* ====== Vairação Clara ====== */
+.default.ligth {
+    background-color: var(--color-Grey-White);
+}
+
+.default.ligth .section-title,
+.default.ligth .section-body {
+    color: var(--color-Black);
+}
+
+
+/* ====== Vairação Escura ====== */
+.default.dark {
+    background-color: var(--color-Black);
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+    color: var(--color-White);
+}
+
+
+/* ===============
+[About Us] */
+
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px var(--color-Grey2) ;
 }
