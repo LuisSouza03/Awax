@@ -6,6 +6,9 @@
     --color-Grey2: #333;
     --color-Grey-White: #f7f7f7;
     --color-Grey3: #999;
+    --color-Grey4: #EEE;
+
+    --color-font-grey: #555;
 }
 
 *{
@@ -91,7 +94,13 @@ header {
     padding: 10px 30px;
     margin-top: 30px;
     border-radius: 20px;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.button:hover {
+    background-color: var(--color-White);
+    color: var(--color-Orange);
+    border: 2px solid var(--color-Orange);
 }
 
 /* ===============
@@ -285,4 +294,90 @@ header {
     margin-top: 10px;
     font-size: 13px;
     color: var(--color-Grey3);
+}
+
+/* ===============
+[Projects] */
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters {
+    border: 1px solid var(--color-Grey);
+    background-color: var(--color-Grey4);
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-projects--filters ul li {
+    list-style: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid var(--color-Grey);
+    color: var(--color-font-grey);
+    border-bottom: 3px solid var(--color-Grey4);
+    cursor: pointer;
+}
+
+.section-projects--filters li:hover {
+    border-bottom: 3px solid var(--color-Orange);
+}
+
+.section-projects--filters li:first-child {
+    border-left: none;
+}
+
+.section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects--photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects--photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-White);
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo {
+    display: flex;
+    cursor: pointer;
+}
+
+.section-projects--photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
 }
