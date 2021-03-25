@@ -11,6 +11,12 @@
     --color-Bg: #F7F7F7;
 
     --color-font-grey: #555;
+
+    --color-twitter: #34c5f0;
+    --color-facebook: #336297;
+    --color-linkedin: #127cb4;
+    --color-googleplus: #e74237;
+    --color-pinterest: #b71c29
 }
 
 *{
@@ -780,4 +786,106 @@ header {
 
 .section-premium .pointer.active {
     background-color:#B28756;
+}
+
+/* ===============
+[Some Facts] */
+
+.section-facts {
+    display: flex;
+}
+
+.section-fact {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+.section-fact h1 {
+    font-size: 45px;
+    color: var(--color-Orange);
+}
+
+.section-fact-line {
+    width: 20px;
+    border-bottom: 2px solid var(--color-Orange);
+    margin: auto;
+}
+
+.section-fact h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-fact p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--color-Grey3);
+}
+
+
+/* ===============
+[Share] */
+
+.section-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-White);
+    color: var(--color-Grey3);
+}
+
+.section-share--legend {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.section-share--legend img {
+    margin-right: 10px;
+}
+
+.section-share--item {
+    font-size: 12px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-share--icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--color-Grey3);
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-share--icon img {
+    height: 12px;
+}
+
+.section-share--icon.twitter {
+    background-color: var(--color-twitter);
+}
+
+.section-share--icon.linkedin {
+    background-color: var(--color-linkedin);
+}
+
+.section-share--icon.facebook {
+    background-color: var(--color-facebook);
+}
+
+.section-share--icon.googleplus {
+    background-color: var(--color-googleplus);
+}
+
+.sectionshare--icon.pinterest {
+    background-color: var(--color-pinterest);
 }
