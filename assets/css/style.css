@@ -210,7 +210,7 @@ header {
 .default .section-desc {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .default .section-title {
@@ -664,4 +664,120 @@ header {
 
 .section-price--item-point {
     font-size: 12px;
+}
+
+/* ===============
+[Premium] */
+
+.premium {
+    background-color: var(--color-White);
+    border-top: 1px solid var(--color-Grey);
+}
+
+.premium .section-body {
+    max-width: initial;
+}
+
+.section-premium {
+    overflow: hidden;
+}
+
+.section-premium a {
+    margin-top: 30px;
+}
+
+/* ====== Sliders ====== */
+
+.section-premium .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.section-premium .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.section-premium .slidearea {
+    display: flex;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+    max-width:1140px;
+    border-bottom:1px solid #CCC;
+    margin:auto;
+    padding-bottom:40px;
+}
+
+/* ====== Left ====== */
+
+.section-premium--left {
+    flex: 1;
+    text-align: right;
+}
+
+.section-premium--left img {
+    width: 300px;
+    margin-right: 30px;
+}
+
+/* ====== Right ====== */
+
+.section-premium--right {
+    flex: 1;
+}
+
+/* ====== Itens ====== */
+
+.section-premium--item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.section-premium--item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.section-premium--item div {
+    flex: 1;
+    color: var(--color-Grey3);
+    line-height: 20px;
+}
+
+.section-premium--item div h4 {
+    color: var(--color-Black);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* ====== Pointers ====== */
+
+.section-premium .sliders-pointers {
+    width:100vw;
+    height:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.section-premium .pointer {
+    width:15px;
+    height:15px;
+    border:2px solid #B28756;
+    border-radius:8px;
+    margin-left:5px;
+    margin-right:5px;
+    cursor:pointer;
+}
+
+.section-premium .pointer:hover {
+    background-color: var(--color-Orange);
+}
+
+.section-premium .pointer.active {
+    background-color:#B28756;
 }
