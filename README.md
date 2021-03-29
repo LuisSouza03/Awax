@@ -1,10 +1,8 @@
 <h1 align="center">Awax</h1>
 
 ## Descrição do Projeto
-<p align="center">Projeto que fiz junto com Bonieky Lacerda em uma video aula.</p>
+<p align="center">Projeto pego no Behance, fiz com ajuda das aulas do Bonieky</p>
 
-<h4 align="center"> 
-	🚧 🚀 Em construção... 🚧
 </h4>
 
 ### 🛠 Tecnologias
